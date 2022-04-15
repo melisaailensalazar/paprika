@@ -10,139 +10,206 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
     <title>Paprika</title>
   </head>
   <!--FIN HEAD-->
   <!--INICIO BODY-->
-  <body>
-    <!--HEADER-->
-    <div class="contenedor">
-      <div id="barra">
-        <button class="barra__button"><i class="fa-solid fa-user"></i></button>
-        <button class="barra__button"> <i class="fa-solid fa-cart-shopping"></i></button>
-        <input type="text" class="barra__input">
-        <button class="barra__button"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
-      <div id="header">
-        <header>
-          <div id="header">
-          <a href="../index.html">
-            <img src="../img/logo.png" id="nav__logo" alt="Paprika" /></a>
-            <span id="nav__paprika">paprika</span></li></div>
-        </header>
-      </div>
-    <!--FIN HEADER-->
-    <!--HAMBURGUESA-->
-    <div class="respmenu">
-      <input type="checkbox">
-      <i class="fa-solid fa-bars"></i>
-      <i class="fa-solid fa-times"></i>
-        <nav>
-          <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="tienda.html">TIENDA</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-            <li><a href="quienes-somos.html">¿QUIÉNES SOMOS?</a></li>
-            <li><a href="preguntas-frecuentes.html">PREGUNTAS</a></li>
-          </ul>
+  <body>    
+    <div class="contenedor container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" class="nav__logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tienda.html">Tienda<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quienes-somos.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="preguntas-frecuentes.html">Preguntas</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
         </nav>
-    </div>
-  <!--SIDEBAR-->
-  <div id="sidebar">
-    <nav>
-      <sidebar>
-          <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="tienda.html">TIENDA</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-            <li><a href="quienes-somos.html">¿QUIÉNES SOMOS?</a></li>
-            <li><a href="preguntas-frecuentes.html">PREGUNTAS</a></li>
-          </ul>
-        </sidebar>
-      </nav>
-  </div>
+      
+      <!--HEADER-->
+
+      <!--BARRA DE BUSQUEDA
+        <div id="barra" class="row">
+          <div class="col">
+            <button class="barra__button"><i class="fa-solid fa-user"></i></button>
+            <button class="barra__button"> <i class="fa-solid fa-cart-shopping"></i></button>
+            <input type="text" class="barra__input">
+            <button class="barra__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+      -->
+        <div id="header" class="row text-center">
+          <div class="col">
+            <header>
+              <div id="header">
+                <a href="../index.html">
+                  <img src="../img/logo.png" class="nav__logo" alt="Paprika" /></a>
+                  <span id="nav__paprika">paprika</span></li>
+              </div>
+            </header>
+          </div>
+        </div>
+
+    <!--FIN HEADER-->
+
+    <!--HAMBURGUESA
+      <div class="respmenu">
+        <input type="checkbox">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times"></i>
+          <nav>
+            <ul>
+              <li><a href="../index.html">INICIO</a></li>
+              <li><a href="tienda.html">TIENDA</a></li>
+              <li><a href="contacto.html">CONTACTO</a></li>
+              <li><a href="quienes-somos.html">¿QUIÉNES SOMOS?</a></li>
+              <li><a href="preguntas-frecuentes.html">PREGUNTAS</a></li>
+            </ul>
+          </nav>
+      </div>
+    SIDEBAR-->
+      <div class="row row-cols-md-2">
+        <div class="col-md-4">
+          <div id="sidebar">
+            <nav>
+              <sidebar>
+                  <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="tienda.html">TIENDA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="quienes-somos.html">¿QUIÉNES SOMOS?</a></li>
+                    <li><a href="preguntas-frecuentes.html">PREGUNTAS</a></li>
+                  </ul>
+              </sidebar>
+            </nav>
+          </div>
+        </div>
+        
     <!--FIN SIDEBAR-->
-  <main>
-      <div id="categorias">
-        <ul>
-          <li><a href="#">Suculentas</a></li>
-          <li><a href="#">Cactus</a></li>
-          <li><a href="#">Otras plantas</a></li>
-          <li><a href="#">Decoración</a></li>
-          <li><a href="#">Herramientas</a></li>
-        </ul>
+
+    <!--CONTENIDO PRINCIPAL-->
+      <main>
+        <section>
+          <div class="col-auto text-center">
+            <div>
+              <ul id="categorias">
+                <li><a href="#">Suculentas</a></li>
+                <li><a href="#">Cactus</a></li>
+                <li><a href="#">Otras plantas</a></li>
+                <li><a href="#">Decoración</a></li>
+                <li><a href="#">Herramientas</a></li>
+              </ul>
+            </div>
+            <h1>Tienda</h1>
+            <div class="card-group">
+              <div class="card">
+                <img src="https://media.admagazine.com/photos/618a5e6851ab72df0a763f71/master/w_1600,c_limit/93259.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Suculenta</h5>
+                  <p class="card-text">Planta</p>
+                  <a href="#" class="button btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://media.admagazine.com/photos/618a5e6851ab72df0a763f71/master/w_1600,c_limit/93259.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Suculenta</h5>
+                  <p class="card-text">Planta</p>
+                  <a href="#" class="button btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://media.admagazine.com/photos/618a5e6851ab72df0a763f71/master/w_1600,c_limit/93259.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Suculenta</h5>
+                  <p class="card-text">Planta</p>
+                  <a href="#" class="button btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card">
+                <img src="https://media.admagazine.com/photos/618a5e6851ab72df0a763f71/master/w_1600,c_limit/93259.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Suculenta</h5>
+                  <p class="card-text">Planta</p>
+                  <a href="#" class="button btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://media.admagazine.com/photos/618a5e6851ab72df0a763f71/master/w_1600,c_limit/93259.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Suculenta</h5>
+                  <p class="card-text">Planta</p>
+                  <a href="#" class="button btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://media.admagazine.com/photos/618a5e6851ab72df0a763f71/master/w_1600,c_limit/93259.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Suculenta</h5>
+                  <p class="card-text">Planta</p>
+                  <a href="#" class="button btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link verde" href="#">1</a></li>
+                <li class="page-item"><a class="page-link verde" href="#">2</a></li>
+                <li class="page-item"><a class="page-link verde" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link verde" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+       </div>
+      </main>
+    <!--INICIO FOOTER-->
+    <footer class="row row-cols-2">
+      <div class="col-6">
+        <h4>CONTACTO</h4>
+          ventas@paprika.com</br>+549112345678
       </div>
-      <h1>Tienda</h1>
-      <div id="tienda">
-        <div class="cards">
-          <div class="art">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="">
-            <button>COMPRAR</button>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="art">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="">
-            <button>COMPRAR</button>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="art">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="">
-            <button>COMPRAR</button>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="art">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="">
-            <button>COMPRAR</button>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="art">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="">
-            <button>COMPRAR</button>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="art">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-            <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="">
-            <button>COMPRAR</button>
-          </div>
-        </div>
-      </div>
-        <h1>Destacados</h1>
-        <img src="https://sc04.alicdn.com/kf/HTB1guoWuruWBuNjSszg7628jVXaJ.png" alt="Suculenta" class="tienda__imgMedium">
-        <img src="https://sc04.alicdn.com/kf/HTB1NoXUhnqWBKNjSZFx763pLpXaH.png" alt="Suculenta" class="tienda__imgMedium">
-        <img src="https://sc04.alicdn.com/kf/HTB1RO8AhnqWBKNjSZFx763pLpXaR.png" alt="Suculenta" class="tienda__imgMedium">
-        <img src="https://sc04.alicdn.com/kf/HTB10l65uxSYBuNjSsph762GvVXaB.png" alt="Suculenta" class="tienda__imgLarge">
-        <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="Suculenta" class="tienda__imgLarge">
-  </main>
-  <!--INICIO FOOTER-->
-    <footer>
-      <h4>CONTACTO</h4>
-        ventas@paprika.com</br>+549112345678
-      <h4>REDES</h4>
-      <a href="http://instagram.com/paprika"><img src="../img/instagram-brands.svg" alt="Instagram" width="15px"></a>
-      <a href="http://facebook.com/paprika"><img src="../img/facebook-square-brands.svg" alt="Facebook" width="15px"></a>
-      <a href="http://twitter.com/paprika"><img src="../img/twitter-square-brands.svg" alt="Twitter" width="15px"></a>
+      <div class="col-6">
+        <h4>REDES</h4>
+        <a href="http://instagram.com/paprika"><img src="../img/instagram-brands.svg" alt="Instagram" width="15px"></a>
+        <a href="http://facebook.com/paprika"><img src="../img/facebook-square-brands.svg" alt="Facebook" width="15px"></a>
+        <a href="http://twitter.com/paprika"><img src="../img/twitter-square-brands.svg" alt="Twitter" width="15px"></a>
+      </div> 
     </footer>
-  <!--FIN FOOTER-->
-</div>
-</body>
-</html>
-<!--FIN BODY-->
+    <!--FIN FOOTER-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+  <!--FIN BODY-->
 </html>

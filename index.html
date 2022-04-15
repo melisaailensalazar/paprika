@@ -10,31 +10,72 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
     <title>Paprika</title>
   </head>
   <!--FIN HEAD-->
   <!--INICIO BODY-->
-  <body>
-    <!--HEADER-->
-    <div class="contenedor">
-      <div id="barra">
-        <button class="barra__button"><i class="fa-solid fa-user"></i></button>
-        <button class="barra__button"> <i class="fa-solid fa-cart-shopping"></i></button>
-        <input type="text" class="barra__input">
-        <button class="barra__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+  <body>    
+    <div class="contenedor container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" class="nav__logo" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/quienes-somos.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/preguntas-frecuentes.html">Preguntas</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--HEADER
 
-      </div>
-      <div id="header">
-        <header>
-          <div id="header">
-          <a href="index.html">
-            <img src="img/logo.png" id="nav__logo" alt="Paprika" /></a>
-            <span id="nav__paprika">paprika</span></li></div>
-        </header>
-      </div>
-    <!--FIN HEADER-->
-    <!--HAMBURGUESA-->
+      BARRA DE BUSQUEDA
+        <div id="barra" class="row">
+          <div class="col">
+            <button class="barra__button"><i class="fa-solid fa-user"></i></button>
+            <button class="barra__button"> <i class="fa-solid fa-cart-shopping"></i></button>
+            <input type="text" class="barra__input">
+            <button class="barra__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>-->
+
+        <div id="header" class="row text-center">
+          <div class="col">
+            <header>
+              <div id="header">
+                <a href="index.html">
+                  <img src="img/logo.png" class="nav__logo" alt="Paprika" /></a>
+                  <span id="nav__paprika">paprika</span></li>
+              </div>
+            </header>
+          </div>
+        </div>
+
+    <!--FIN HEADER
+
+    HAMBURGUESA
       <div class="respmenu">
         <input type="checkbox">
         <i class="fa-solid fa-bars"></i>
@@ -49,103 +90,112 @@
             </ul>
           </nav>
       </div>
-    <!--SIDEBAR-->
-      <div id="sidebar">
-        <nav>
-          <sidebar>
-              <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="pages/tienda.html">TIENDA</a></li>
-                <li><a href="pages/contacto.html">CONTACTO</a></li>
-                <li><a href="pages/quienes-somos.html">¿QUIÉNES SOMOS?</a></li>
-                <li><a href="pages/preguntas-frecuentes.html">PREGUNTAS</a></li>
-              </ul>
-            </sidebar>
-          </nav>
-      </div>
+
+    SIDEBAR-->
+      <div class="row row-cols-md-2">
+        <div class="col-md-4">
+          <div id="sidebar">
+            <nav>
+              <sidebar>
+                  <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="pages/tienda.html">TIENDA</a></li>
+                    <li><a href="pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="pages/quienes-somos.html">¿QUIÉNES SOMOS?</a></li>
+                    <li><a href="pages/preguntas-frecuentes.html">PREGUNTAS</a></li>
+                  </ul>
+              </sidebar>
+            </nav>
+          </div>
+        </div>
     <!--FIN SIDEBAR-->
+
+    <!--CONTENIDO PRINCIPAL-->
       <main>
         <section>
-        <h1>Paprika</h1>
-        <img src="https://www.handfie.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/06/suculentas-principal.jpg.webp" class="imgMobile tienda__imgLarge" alt="Suculentas">
-        <div class="wrapper">
-          <div class="slider" id="slider">
-            <ul class="slides">
-              <li class="slide" id="slide1">
-                <a href="#">
-                  <p class="caption">Cáctus y suculentas para todos los gustos</p>
-                  <img src="https://sc04.alicdn.com/kf/HTB1guoWuruWBuNjSszg7628jVXaJ.png" alt="photo 1">
+          <div class="col-auto">
+            <h1>Paprika</h1>
+            <div class="container my-5">
+              <div class="carousel slide" id="slider" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+                </div>
+            
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.handfie.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/06/suculentas-principal.jpg.webp" alt="" class="d-block w-100" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Lorem, ipsum dolor.</h5>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Commodi, magni!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.handfie.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/06/suculentas-caracteristicas.jpg.webp" alt="" class="d-block w-100" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Lorem, ipsum dolor. 2</h5>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Commodi, magni!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.handfie.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/06/echeveria-peluda.jpg.webp" alt="" class="d-block w-100" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Lorem, ipsum dolor. 3</h5>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Commodi, magni!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            
+                <a href="#slider" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </a>
-              </li>
-              <li class="slide" id="slide2">
-                <a href="#">
-                  <p class="caption">Dale un toque de verde a tu hogar</p>
-                  <img src="https://sc04.alicdn.com/kf/HTB1NoXUhnqWBKNjSZFx763pLpXaH.png" alt="photo 2">
+            
+                <a href="#slider" class="carousel-control-next" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"> Next </span>
                 </a>
-              </li>
-              <li class="slide" id="slide3">
-                <a href="#">
-                  <p class="caption">Comprá fácil, rápido y seguro</p>
-                  <img src="https://sc04.alicdn.com/kf/HTB1RO8AhnqWBKNjSZFx763pLpXaR.png" alt="photo 3">
-                </a>
-              </li>
-              <li class="slide" id="slide4">
-                <a href="#">
-                  <p class="caption">Te llevamos tu pedido en menos de 48 horas</p>
-                  <img src="https://sc04.alicdn.com/kf/HTB10l65uxSYBuNjSsph762GvVXaB.png" alt="photo 4">
-                </a>
-              </li>
-              <li class="slide" id="slide5">
-                <a href="#">
-                   <p class="caption">Hacemos envíos en todo Buenos Aires</p>
-                   <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="photo 5">
-                </a>
-              </li>
-              <li class="slide">
-                <a href="#">
-                  <p class="caption">Cactus y suculentas para todos los gustos</p>
-                  <img src="https://sc04.alicdn.com/kf/HTB1guoWuruWBuNjSszg7628jVXaJ.png" alt="photo 1">
-                </a>
-              </li>
-            </ul>
-            <ul class="slider-controler">
-              <li><a href="#slide1">&bullet;</a></li>
-              <li><a href="#slide2">&bullet;</a></li>
-              <li><a href="#slide3">&bullet;</a></li>
-              <li><a href="#slide4">&bullet;</a></li>
-              <li><a href="#slide5">&bullet;</a></li>
-            </ul>
+              </div>
+            </div>
+            <div class="jumbotron">
+              <h1 class="display-4">Novedades</h1>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <hr class="my-4">
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
+              </div>
+            </div>
           </div>
         </div>
         </section>
-        <section>
-          <div class="textbox">
-
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec libero et nunc efficitur malesuada at id erat. Maecenas et gravida mi. Nunc eu lobortis diam. Aenean mollis tincidunt mauris a mattis. Morbi lobortis dignissim elit, vel porta neque elementum sed. Nam vel risus ut nisl accumsan elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean semper ex at risus accumsan, non accumsan libero convallis. Mauris quis mollis est. Nunc ex augue, molestie a luctus quis, maximus et est. Phasellus mattis vehicula nibh et interdum. Duis convallis commodo blandit. Suspendisse finibus dolor ac ipsum dictum rutrum. Cras pharetra et libero a fermentum.
-
-    In ac ligula imperdiet, blandit metus quis, gravida mi. Maecenas semper, sapien id auctor posuere, est diam malesuada lacus, ut bibendum tellus mauris eget felis. Nunc at ornare massa. Praesent viverra, libero at faucibus bibendum, nulla sem maximus lorem, sit amet interdum mauris neque sit amet ligula. Proin ac elit augue. Nulla aliquam mollis porttitor. Nunc eu tortor placerat, rutrum sem ac, semper ex. In sit amet finibus enim. Aliquam ac lectus arcu. Quisque convallis lacinia vulputate.
-          </div>
-        </section>
-        <section>
-          <h1>Tienda</h1>
-          <img src="https://sc04.alicdn.com/kf/HTB1guoWuruWBuNjSszg7628jVXaJ.png" alt="Suculenta" class="tienda__imgMedium">
-          <img src="https://sc04.alicdn.com/kf/HTB1NoXUhnqWBKNjSZFx763pLpXaH.png" alt="Suculenta" class="tienda__imgMedium">
-          <img src="https://sc04.alicdn.com/kf/HTB1RO8AhnqWBKNjSZFx763pLpXaR.png" alt="Suculenta" class="tienda__imgMedium">
-          <img src="https://sc04.alicdn.com/kf/HTB10l65uxSYBuNjSsph762GvVXaB.png" alt="Suculenta" class="tienda__imgLarge">
-          <img src="https://sc04.alicdn.com/kf/HTB1L77IupOWBuNjy0Fi760FxVXaj.png" alt="Suculenta" class="tienda__imgLarge">
-        </section>
       </main>
     <!--INICIO FOOTER-->
-    <footer>
-      <h4>CONTACTO</h4>
-        ventas@paprika.com</br>+549112345678
-      <h4>REDES</h4>
-      <a href="http://instagram.com/paprika"><img src="img/instagram-brands.svg" alt="Instagram" width="15px"></a>
-      <a href="http://facebook.com/paprika"><img src="img/facebook-square-brands.svg" alt="Facebook" width="15px"></a>
-      <a href="http://twitter.com/paprika"><img src="img/twitter-square-brands.svg" alt="Twitter" width="15px"></a>
+    <footer class="row row-cols-2">
+      <div class="col-6">
+        <h4>CONTACTO</h4>
+          ventas@paprika.com</br>+549112345678
+      </div>
+      <div class="col-6">
+        <h4>REDES</h4>
+        <a href="http://instagram.com/paprika"><img src="img/instagram-brands.svg" alt="Instagram" width="15px"></a>
+        <a href="http://facebook.com/paprika"><img src="img/facebook-square-brands.svg" alt="Facebook" width="15px"></a>
+        <a href="http://twitter.com/paprika"><img src="img/twitter-square-brands.svg" alt="Twitter" width="15px"></a>
+      </div> 
     </footer>
     <!--FIN FOOTER-->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
   <!--FIN BODY-->
 </html>
