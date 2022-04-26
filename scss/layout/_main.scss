@@ -1,0 +1,61 @@
+/*ESTILO GENERAL*/
+
+.contenedor{
+    background-color: white;
+    justify-content: center;
+    display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "nav"
+          "header"
+          "main"
+          "footer";
+      }
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:0.7em;
+    color:gray;
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+}
+
+main {
+    padding: 1rem;
+    grid-area: main;
+}
+
+p{
+    padding: 1rem;
+    margin:10px;
+    font-size:0.9rem;
+}
+
+h1{
+    font-family: $title-font;
+    background-color:$darkolive;
+    color:white;
+    margin: 0 0 20px 0;
+    text-align: center;
+    line-height: 2;
+}
+
+h2{
+    font-family: 'Satisfy', cursive;
+    background-color:$darkolive;
+    color:white;
+    margin: 0 0 20px 0;
+    text-align: center;
+    line-height: 2;
+    font-size:1.5em !important;
+}
+
+h4{
+    padding:5px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:1rem;
+    background-color: rgb(160, 180, 120);
+    color:white;
+}

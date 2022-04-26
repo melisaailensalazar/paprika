@@ -1,0 +1,55 @@
+/*FORMULARIO*/
+
+form{
+    width:100%;
+    padding:20px;
+    margin:0 auto;
+}
+
+textarea{
+    width: 100%;
+    margin:0 auto;
+}
+
+#form__button{
+    margin-top:20px;
+    width:40%;
+    color:white;
+    background-color: $darkolive;
+    border-radius: 5px;
+    border:0;
+}
+
+.cuadro{
+    border-radius: 20px;
+    border-color: $darkolive;
+    border-style: dashed;
+}
+
+.textbox{
+    margin:20px;
+    padding:20px;
+    color:white;
+    background-color:rgb(160, 180, 120);
+    text-align: center;
+    border-radius: 20px;
+    font-family:  Helvetica, Arial,sans-serif;
+    font-size: 0.9rem;
+}
+
+#nombreApellido:focus, #mail:focus {
+    border-color:$darkolive;
+    box-shadow: none;
+    background:none;
+}
+
+/*TRANSICION*/
+
+#form__button {
+    transition: background ease-in .3s;
+}
+
+#form__button:hover {
+    background: white;
+    color: $darkolive;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "paprika",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melisaailensalazar/paprika.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melisaailensalazar/paprika/issues"
+  },
+  "homepage": "https://github.com/melisaailensalazar/paprika#readme"
+}

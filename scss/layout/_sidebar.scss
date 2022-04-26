@@ -1,0 +1,33 @@
+/*SIDEBAR*/
+
+#sidebar{
+    padding: 1rem;
+        
+    li{
+        list-style: none;
+        font-weight: bold;
+        margin:10px;
+
+            &:hover{
+                animation: pulse; 
+                animation-duration: 0.5s;
+            }
+    }
+    a{
+        color:$darkolive;
+        font-size:0.8rem;
+        text-decoration: none;
+            
+            &:hover{
+            text-decoration: none;
+            color:$darkolive;
+            }
+    }
+    display:none;
+}
+
+a{
+    color: $darkolive;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}

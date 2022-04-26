@@ -1,0 +1,27 @@
+/*HEADER*/
+
+#header{
+    background-color: beige;
+    padding: 1rem;
+    justify-items: center;
+}
+
+#barra{
+    display:flex;
+    grid-area:barra;
+    padding:0.5rem;
+    background-color:rgb(160, 180, 120);
+}
+
+.barra__button{
+    border:0;
+    background: none;
+    margin:0 10px 0 10px;
+    color:white;
+}
+
+.barra__input{
+    background-color: beige;
+    border-color: grey;
+    border-style: dotted;
+}

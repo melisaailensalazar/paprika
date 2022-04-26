@@ -1,0 +1,49 @@
+/*TIENDA*/
+
+#categorias{
+    a{
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        margin:10px;
+        padding:10px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        color:$darkolive;
+    }
+    li{
+    list-style:none;
+    display: inline-flex;
+    justify-items: center;
+        &:hover{
+            animation: pulse;
+            animation-duration: 0.5s;
+        }
+    }
+}
+
+.tienda__imgMedium{
+    display:none;
+}
+.tienda__imgLarge{
+    width:90%;
+}
+
+#tienda__button{
+    background-color: $darkolive;
+    color:white;
+    border-color: $darkolive;
+    transition: background ease-in .3s;
+        &:hover {
+        background: white;
+        color: $darkolive;
+        }
+}
+
+#page{
+    color:$darkolive;
+    border-color:$darkolive;
+        &:hover{
+        background-color: rgb(225, 255, 160);
+        }
+}
+

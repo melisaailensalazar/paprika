@@ -1,0 +1,38 @@
+/*QUERIES
+
+/*DISEñO PARA PANTALLAS DE MAS DE 768PX*/
+  
+@media (min-width: 768px) {    
+    
+    #sidebar{
+        display:flex !important;
+    }
+    .textbox{
+        font-size:1rem;
+    }
+    .p{
+        font-size: 1rem;
+    }
+    .contenedor {
+        grid-template-areas:
+        "nav nav"
+        "header header"
+        "sidebar main"
+        "footer footer";
+        margin:0;
+        font-size: 1em;
+    }
+    .tienda__imgLarge{
+        width: 45%; 
+    }
+    .tienda__imgMedium{
+        width:30%
+    }
+    .tienda__imgLarge,.tienda__imgMedium{
+        display:inline-block;
+    }
+
+    .imgMobile{
+        display:none;
+    }
+  }
