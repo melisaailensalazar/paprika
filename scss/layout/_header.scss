@@ -1,9 +1,15 @@
 /*HEADER*/
 
+$estilos: (
+    color: beige,
+    centro: center,
+    1rem:1rem
+);
+
 #header{
-    background-color: beige;
-    padding: 1rem;
-    justify-items: center;
+    background-color: map-get($estilos, color);
+    padding: map-get($estilos, 1rem);
+    justify-items: map-get($estilos, centro);
 }
 
 #barra{

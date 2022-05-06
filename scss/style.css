@@ -1,0 +1,368 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*QUERIES
+
+/*DISEñO PARA PANTALLAS DE MAS DE 768PX*/
+@media (min-width: 768px) {
+  #sidebar {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .textbox {
+    font-size: 1rem;
+  }
+  .p {
+    font-size: 1rem;
+  }
+  .contenedor {
+        grid-template-areas: "nav nav" "header header" "sidebar main" "footer footer";
+    margin: 0;
+    font-size: 1em;
+  }
+  .tienda__imgLarge {
+    width: 45%;
+  }
+  .tienda__imgMedium {
+    width: 30%;
+  }
+  .tienda__imgLarge, .tienda__imgMedium {
+    display: inline-block;
+  }
+  .imgMobile {
+    display: none;
+  }
+}
+
+.navbar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+header {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+/*HEADER*/
+#header {
+  background-color: beige;
+  padding: 1rem;
+  justify-items: center;
+}
+
+#barra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: barra;
+  padding: 0.5rem;
+  background-color: #a0b478;
+}
+
+.barra__button {
+  border: 0;
+  background: none;
+  margin: 0 10px 0 10px;
+  color: white;
+}
+
+.barra__input {
+  background-color: beige;
+  border-color: grey;
+  border-style: dotted;
+}
+
+/*FOOTER*/
+footer {
+  background-color: beige;
+  color: dimgrey;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer h4 {
+  color: gray;
+  font-size: 0.8rem;
+  background-color: beige;
+}
+
+.btn--twitter {
+  color: #55acee;
+}
+
+.btn--facebook {
+  color: #3a5795;
+}
+
+.btn--instagram {
+  color: #C25E30;
+}
+
+.btn--twitter:hover {
+  color: #55acee;
+}
+
+.btn--facebook:hover {
+  color: #3a5795;
+}
+
+.btn--instagram:hover {
+  color: #C25E30;
+}
+
+/*NAV*/
+.nav__logo {
+  width: 3rem;
+  border-radius: 50%;
+  -webkit-transition: width .25s, -webkit-box-shadow .25s;
+  transition: width .25s, -webkit-box-shadow .25s;
+  transition: width .25s, box-shadow .25s;
+  transition: width .25s, box-shadow .25s, -webkit-box-shadow .25s;
+}
+
+.nav__logo:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 4rem;
+}
+
+#nav__paprika {
+  font-family: 'Pacifico', cursive;
+  color: darkolivegreen;
+  font-size: 3rem;
+}
+
+/*SIDEBAR*/
+#sidebar {
+  padding: 1rem;
+  display: none;
+}
+
+#sidebar li {
+  list-style: none;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#sidebar li:hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+#sidebar a {
+  color: darkolivegreen;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+#sidebar a:hover {
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+a {
+  color: darkolivegreen;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+/*ESTILO GENERAL*/
+.contenedor {
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "nav" "header" "main" "footer";
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.7em;
+  color: gray;
+  font-weight: lighter;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main {
+  padding: 1rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+p {
+  padding: 1rem;
+  margin: 10px;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+  background-color: darkolivegreen;
+  color: white;
+  margin: 0 0 20px 0;
+  text-align: center;
+  line-height: 2;
+}
+
+h2 {
+  font-family: 'Satisfy', cursive;
+  background-color: darkolivegreen;
+  color: white;
+  margin: 0 0 20px 0;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.5em !important;
+}
+
+h4 {
+  padding: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  background-color: #a0b478;
+  color: white;
+}
+
+/*TIENDA*/
+#categorias a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+#categorias li {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-items: center;
+}
+
+#categorias li:hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+#tienda__button {
+  background-color: darkolivegreen;
+  color: white;
+  border-color: darkolivegreen;
+  -webkit-transition: background ease-in .3s;
+  transition: background ease-in .3s;
+}
+
+#tienda__button:hover {
+  background: white;
+  color: darkolivegreen;
+}
+
+#page {
+  color: darkolivegreen;
+  border-color: darkolivegreen;
+}
+
+#page:hover {
+  background-color: #e1ffa0;
+}
+
+/*FORMULARIO*/
+form {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#form__button {
+  margin-top: 20px;
+  width: 40%;
+  color: white;
+  background-color: darkolivegreen;
+  border-radius: 5px;
+  border: 0;
+}
+
+.cuadro {
+  border-radius: 20px;
+  border-color: darkolivegreen;
+  border-style: dashed;
+}
+
+.textbox {
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  background-color: #a0b478;
+  text-align: center;
+  border-radius: 20px;
+  font-family: Helvetica, Arial,sans-serif;
+  font-size: 0.9rem;
+}
+
+#nombreApellido:focus, #mail:focus {
+  border-color: darkolivegreen;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+}
+
+/*TRANSICION*/
+#form__button {
+  -webkit-transition: background ease-in .3s;
+  transition: background ease-in .3s;
+}
+
+#form__button:hover {
+  background: white;
+  color: darkolivegreen;
+}
+
+/*INDEX*/
+#index__button:hover {
+  -webkit-animation: heartBeat;
+          animation: heartBeat;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+/*# sourceMappingURL=style.css.map */

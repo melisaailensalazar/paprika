@@ -1,7 +1,7 @@
 /*NAV*/
 
 .nav__logo{
-    width: 3rem;
+    @include size(3rem);
     border-radius: 50%;
     transition: width .25s, box-shadow .25s;
     &:hover {

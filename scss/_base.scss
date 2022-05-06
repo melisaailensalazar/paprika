@@ -6,3 +6,8 @@
 
 $title-font: 'Satisfy', cursive;
 $darkolive:darkolivegreen;
+
+@mixin size($width) {
+    width: $width;
+ }
+ 
