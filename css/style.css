@@ -102,6 +102,30 @@ footer h4 {
   background-color: beige;
 }
 
+.btn--twitter {
+  color: #55acee;
+}
+
+.btn--facebook {
+  color: #3a5795;
+}
+
+.btn--instagram {
+  color: #C25E30;
+}
+
+.btn--twitter:hover {
+  color: #55acee;
+}
+
+.btn--facebook:hover {
+  color: #3a5795;
+}
+
+.btn--instagram:hover {
+  color: #C25E30;
+}
+
 /*NAV*/
 .nav__logo {
   width: 3rem;
@@ -179,7 +203,7 @@ p {
   font-size: 0.9rem;
 }
 
-h1 {
+h1, h2 {
   font-family: "Satisfy", cursive;
   background-color: darkolivegreen;
   color: white;
@@ -189,12 +213,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Satisfy", cursive;
-  background-color: darkolivegreen;
-  color: white;
-  margin: 0 0 20px 0;
-  text-align: center;
-  line-height: 2;
   font-size: 1.5em !important;
 }
 
@@ -224,14 +242,6 @@ h4 {
 #categorias li:hover {
   animation: pulse;
   animation-duration: 0.5s;
-}
-
-.tienda__imgMedium {
-  display: none;
-}
-
-.tienda__imgLarge {
-  width: 90%;
 }
 
 #tienda__button {
