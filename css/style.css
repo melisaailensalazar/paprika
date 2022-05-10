@@ -231,6 +231,15 @@ h4 {
   background-color: rgb(225, 255, 160);
 }
 
+#precio {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+h5 {
+  color: darkolivegreen;
+}
+
 /*FORMULARIO*/
 form {
   width: 100%;
