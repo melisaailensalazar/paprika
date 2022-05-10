@@ -1,7 +1,7 @@
 {
   "name": "paprika",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web de venta de plantas, cactus y suculentas",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/melisaailensalazar/paprika.git"
   },
-  "author": "",
+  "author": "Melisa Ailen Salazar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/melisaailensalazar/paprika/issues"

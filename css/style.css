@@ -26,22 +26,6 @@
     margin: 0;
     font-size: 1em;
   }
-
-  .tienda__imgLarge {
-    width: 45%;
-  }
-
-  .tienda__imgMedium {
-    width: 30%;
-  }
-
-  .tienda__imgLarge, .tienda__imgMedium {
-    display: inline-block;
-  }
-
-  .imgMobile {
-    display: none;
-  }
 }
 .navbar {
   grid-area: nav;
@@ -66,40 +50,23 @@ footer {
   justify-items: center;
 }
 
-#barra {
-  display: flex;
-  grid-area: barra;
-  padding: 0.5rem;
-  background-color: rgb(160, 180, 120);
-}
-
-.barra__button {
-  border: 0;
-  background: none;
-  margin: 0 10px 0 10px;
-  color: white;
-}
-
-.barra__input {
-  background-color: beige;
-  border-color: grey;
-  border-style: dotted;
-}
-
 /*FOOTER*/
 footer {
-  background-color: beige;
-  color: dimgrey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
-  padding: 1rem;
   text-align: center;
+  background-color: beige;
+  color: dimgrey;
+  padding: 1rem;
 }
 
 footer h4 {
-  color: gray;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
+  text-align: center;
   background-color: beige;
+  color: darkolivegreen;
+  font-weight: bold;
 }
 
 .btn--twitter {
@@ -227,10 +194,11 @@ h4 {
 /*TIENDA*/
 #categorias a {
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
   font-weight: bold;
   margin: 10px;
   padding: 10px;
-  font-size: 0.8rem;
   text-decoration: none;
   color: darkolivegreen;
 }
@@ -288,17 +256,6 @@ textarea {
   border-radius: 20px;
   border-color: darkolivegreen;
   border-style: dashed;
-}
-
-.textbox {
-  margin: 20px;
-  padding: 20px;
-  color: white;
-  background-color: rgb(160, 180, 120);
-  text-align: center;
-  border-radius: 20px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 0.9rem;
 }
 
 #nombreApellido:focus, #mail:focus {

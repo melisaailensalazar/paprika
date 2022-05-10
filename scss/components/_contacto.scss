@@ -26,17 +26,6 @@ textarea{
     border-style: dashed;
 }
 
-.textbox{
-    margin:20px;
-    padding:20px;
-    color:white;
-    background-color:rgb(160, 180, 120);
-    text-align: center;
-    border-radius: 20px;
-    font-family:  Helvetica, Arial,sans-serif;
-    font-size: 0.9rem;
-}
-
 #nombreApellido:focus, #mail:focus {
     border-color:$darkolive;
     box-shadow: none;

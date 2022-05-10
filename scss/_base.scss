@@ -10,4 +10,10 @@ $darkolive:darkolivegreen;
 @mixin size($width) {
     width: $width;
  }
+
+ @mixin estiloTexto {
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
  
