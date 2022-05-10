@@ -232,12 +232,25 @@ h4 {
 }
 
 #precio {
+  color: grey;
   font-weight: bold;
   font-size: 1rem;
 }
 
 h5 {
   color: darkolivegreen;
+}
+
+.h5-carousel {
+  background-color: #fff;
+  opacity: 60%;
+  padding: 10px;
+}
+
+.p-carousel {
+  color: white;
+  opacity: 60%;
+  background-color: darkolivegreen;
 }
 
 /*FORMULARIO*/
