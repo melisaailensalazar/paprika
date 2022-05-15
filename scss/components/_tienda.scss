@@ -1,63 +1,66 @@
 /*TIENDA*/
 
-#categorias{
-    a{
-        @include estiloTexto;
-        font-weight: bold;
-        margin:10px;
-        padding:10px;
-        text-decoration: none;
-        color:$darkolive;
-    }
-    li{
-    list-style:none;
+#categorias {
+  a {
+    @include estiloTexto;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: $darkolive;
+  }
+  li {
+    list-style: none;
     display: inline-flex;
     justify-items: center;
-        &:hover{
-            animation: pulse;
-            animation-duration: 0.5s;
-        }
+    &:hover {
+      animation: pulse;
+      animation-duration: 0.5s;
     }
+  }
 }
 
-#tienda__button{
-    background-color: $darkolive;
-    color:white;
-    border-color: $darkolive;
-    transition: background ease-in .3s;
-        &:hover {
-        background: white;
-        color: $darkolive;
-        }
+#tienda__button {
+  background-color: $darkolive;
+  color: white;
+  border-color: $darkolive;
+  transition: background ease-in 0.3s;
+  &:hover {
+    background: white;
+    color: $darkolive;
+  }
 }
 
-#page{
-    color:$darkolive;
-    border-color:$darkolive;
-        &:hover{
-        background-color: rgb(225, 255, 160);
-        }
+#page {
+  color: $darkolive;
+  border-color: $darkolive;
+  &:hover {
+    background-color: rgb(225, 255, 160);
+  }
 }
 
-#precio{
-    color:grey;
-    font-weight: bold;
-    font-size: 1rem;
+#precio {
+  color: grey;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-h5{
-    color:$darkolive;
+h5 {
+  color: $darkolive;
 }
 
-.h5-carousel{
-    background-color:#fff;
-    opacity:60%;
-    padding:10px;
+.h5-carousel {
+  background-color: #fff;
+  opacity: 60%;
+  padding: 10px;
 }
 
-.p-carousel{
-    color:white;
-    opacity: 60%;
-    background-color: $darkolive;
+.p-carousel {
+  color: white;
+  opacity: 60%;
+  background-color: $darkolive;
 }
 
+.card-img-top:hover {
+  transform: scale(1.1);
+}

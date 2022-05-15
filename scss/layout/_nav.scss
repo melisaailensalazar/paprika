@@ -1,17 +1,16 @@
 /*NAV*/
 
-.nav__logo{
-    @include size(3rem);
-    border-radius: 50%;
-    transition: width .25s, box-shadow .25s;
-    &:hover {
-        box-shadow: 0 0 10px rgba(0,0,0,.2);
-        width: 4rem;
-        }
+.nav__logo {
+  @include size(3rem);
 }
 
-#nav__paprika{
-    font-family: 'Pacifico', cursive;
-    color:$darkolive;
-    font-size:3rem;
+#nav__paprika {
+  font-family: "Pacifico", cursive;
+  color: $darkolive;
+  font-size: 3rem;
+}
+
+.nav__logo:hover,
+#nav__paprika:hover {
+  transform: scale(1.1);
 }

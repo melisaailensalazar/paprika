@@ -71,14 +71,17 @@ footer h4 {
 
 .btn--twitter {
   color: #55acee;
+  font-size: 30px;
 }
 
 .btn--facebook {
   color: #3a5795;
+  font-size: 30px;
 }
 
 .btn--instagram {
-  color: #C25E30;
+  color: #c25e30;
+  font-size: 30px;
 }
 
 .btn--twitter:hover {
@@ -90,24 +93,23 @@ footer h4 {
 }
 
 .btn--instagram:hover {
-  color: #C25E30;
+  color: #c25e30;
 }
 
 /*NAV*/
 .nav__logo {
   width: 3rem;
-  border-radius: 50%;
-  transition: width 0.25s, box-shadow 0.25s;
-}
-.nav__logo:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 4rem;
 }
 
 #nav__paprika {
   font-family: "Pacifico", cursive;
   color: darkolivegreen;
   font-size: 3rem;
+}
+
+.nav__logo:hover,
+#nav__paprika:hover {
+  transform: scale(1.1);
 }
 
 /*SIDEBAR*/
@@ -253,6 +255,10 @@ h5 {
   background-color: darkolivegreen;
 }
 
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
 /*FORMULARIO*/
 form {
   width: 100%;
@@ -299,8 +305,7 @@ textarea {
 /*BOOTSTRAP*/
 /*INDEX*/
 #index__button:hover {
-  animation: heartBeat;
-  animation-duration: 1s;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

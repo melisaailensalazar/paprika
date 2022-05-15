@@ -1,7 +1,5 @@
 /*INDEX*/
 
-#index__button:hover{
-    animation: heartBeat;
-    animation-duration: 1s;
+#index__button:hover {
+  transform: scale(1.1);
 }
-

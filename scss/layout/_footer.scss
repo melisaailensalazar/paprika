@@ -1,33 +1,34 @@
 /*FOOTER*/
 
 footer {
-    @include estiloTexto;
-    background-color: beige;
-    color:dimgrey;
-    padding: 1rem;
+  @include estiloTexto;
+  background-color: beige;
+  color: dimgrey;
+  padding: 1rem;
 }
 
-footer h4{
-    @include estiloTexto;
-    background-color: beige;
-    color:$darkolive;
-    font-weight: bold;
+footer h4 {
+  @include estiloTexto;
+  background-color: beige;
+  color: $darkolive;
+  font-weight: bold;
 }
 
 $colors: (
- twitter: #55acee,
- facebook:  #3a5795,
- instagram: #C25E30
+  twitter: #55acee,
+  facebook: #3a5795,
+  instagram: #c25e30,
 );
 
 @each $name-color, $color in $colors {
-    .btn--#{$name-color} {
-        color: $color;
-    }
- }
+  .btn--#{$name-color} {
+    color: $color;
+    font-size: 30px;
+  }
+}
 
- @each $name-color, $color in $colors {
-    .btn--#{$name-color}:hover {
-        color: $color;
-    }
- }
+@each $name-color, $color in $colors {
+  .btn--#{$name-color}:hover {
+    color: $color;
+  }
+}
