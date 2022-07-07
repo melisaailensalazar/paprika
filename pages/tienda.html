@@ -96,8 +96,9 @@
               </ul>
             </div>
             <h1>Tienda</h1>
+            <hr>
 
-            <div class="row" id="items"></div>
+            <div class="row" id="cards"></div>
             <div class="card-group">
               <template id="template-card">
                 <div class="col-12 mb-2 col-md-4">
@@ -105,7 +106,7 @@
                     <img src="" class="card-img-top" alt="">
                     <div class="card-body">
                       <h5 class="card-title"></h5>
-                      <p id="precio" class="card-text"></p>
+                      <p id="precio" class="card-text">$</p>
                       <button id="tienda__button" class="button btn btn-primary"><i
                           class="fa-solid fa-cart-shopping"></i></button>
                     </div>
@@ -129,9 +130,27 @@
                     <button class="btn btn-info btn-sm">+</button>
                     <button class="btn btn-danger btn-sm">+</button>
                   </td>
+                  <td>$ <span>500</span></td>
                 </tr>
               </template>
             </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+              </tfoot>
+            </table>
             <nav aria-label="Page navigation example">
               <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
