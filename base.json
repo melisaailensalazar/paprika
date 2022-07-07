@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "nombre": "Mammillaria",
+    "precio": "$500",
+    "url": "../img/cactus-flor-rosa.jpg"
+  },
+  {
+    "id": "2",
+    "nombre": "Mini macetas",
+    "precio": "$350",
+    "url": "../img/mini-macetas.webp"
+  },
+    {
+    "id": "3",
+    "nombre": "Crassula Ovata",
+    "precio": "$400",
+    "url": "../img/planta-de-jade.webp"
+  },
+    {
+    "id": "4",
+    "nombre": "Suculentas",
+    "precio": "$425",
+    "url": "../img/suculentas-varias.webp"
+  },
+    {
+    "id": "5",
+    "nombre": "Variedades",
+    "precio": "$400",
+    "url": "https://media.admagazine.com/photos/618a5e6851ab72df0a763f71/master/w_1600,c_limit/93259.jpg"
+  },
+    {
+    "id": "6",
+    "nombre": "Cactus",
+    "precio": "$475",
+    "url": "../img/cactus.jpg"
+  }
+]

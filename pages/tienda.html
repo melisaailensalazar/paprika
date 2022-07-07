@@ -96,64 +96,41 @@
               </ul>
             </div>
             <h1>Tienda</h1>
+
+            <div class="row" id="items"></div>
             <div class="card-group">
-              <div class="card">
-                <img src="../img/cactus-flor-rosa.jpg" class="card-img-top" alt="Cactus con flores rosadas">
-                <div class="card-body">
-                  <h5 class="card-title">Mammillaria</h5>
-                  <p id="precio" class="card-text">$500</p>
-                  <a href="#" id="tienda__button" class="button btn btn-primary"><i
-                      class="fa-solid fa-cart-shopping"></i></a>
+              <template id="template-card">
+                <div class="col-12 mb-2 col-md-4">
+                  <div class="card">
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p id="precio" class="card-text"></p>
+                      <button id="tienda__button" class="button btn btn-primary"><i
+                          class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="../img/mini-macetas.webp" class="card-img-top" alt="Mini macetas">
-                <div class="card-body">
-                  <h5 class="card-title">Mini macetas</h5>
-                  <p id="precio" class="card-text">$350</p>
-                  <a href="#" id="tienda__button" class="button btn btn-primary"><i
-                      class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-              <div class="card">
-                <img src="../img/planta-de-jade.webp" class="card-img-top" alt="Planta de Jade">
-                <div class="card-body">
-                  <h5 class="card-title">Crassula Ovata</h5>
-                  <p id="precio" class="card-text">$400</p>
-                  <a href="#" id="tienda__button" class="button btn btn-primary"><i
-                      class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="card-group">
-              <div class="card">
-                <img src="../img/suculentas-varias.webp" class="card-img-top" alt="Suculentas varias">
-                <div class="card-body">
-                  <h5 class="card-title">Suculentas</h5>
-                  <p id="precio" class="card-text">$425</p>
-                  <a href="#" id="tienda__button" class="button btn btn-primary"><i
-                      class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-              <div class="card">
-                <img src="https://media.admagazine.com/photos/618a5e6851ab72df0a763f71/master/w_1600,c_limit/93259.jpg"
-                  class="card-img-top" alt="Variedades de plantas">
-                <div class="card-body">
-                  <h5 class="card-title">Variedades</h5>
-                  <p id="precio" class="card-text">$400</p>
-                  <a href="#" id="tienda__button" class="button btn btn-primary"><i
-                      class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
-              <div class="card">
-                <img src="../img/cactus.jpg" class="card-img-top" alt="Cactus">
-                <div class="card-body">
-                  <h5 class="card-title">Cactus</h5>
-                  <p id="precio" class="card-text">$475</p>
-                  <a href="#" id="tienda__button" class="button btn btn-primary"><i
-                      class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
+              </template>
+              <template id="template-footer">
+                <th-scope="row" colspan="2">Total productos</th-scope>
+                  <td>10</td>
+                  <td>
+                    <button class="btn btn-danger btn-sm" id="vaciar-carrito">Vaciar todo</button>
+                  </td>
+                  <td class="font-weight-bold">$ <span>5000</span></td>
+              </template>
+              <template id="template-carrito">
+                <tr>
+                  <th scope="row">ID</th>
+                  <td>Suculenta</td>
+                  <td>1</td>
+                  <td>
+                    <button class="btn btn-info btn-sm">+</button>
+                    <button class="btn btn-danger btn-sm">+</button>
+                  </td>
+                </tr>
+              </template>
             </div>
             <nav aria-label="Page navigation example">
               <ul class="pagination justify-content-center">
@@ -173,12 +150,12 @@
     </div>
     </main>
     <!--INICIO FOOTER-->
-    <footer class="row row-cols-2">
-      <div class="col-6">
+    <footer class="row row-cols-md-2">
+      <div class="col-xs-12 col-md-6 justify-content-center">
         <h4>CONTACTO</h4>
         ventas@paprika.com</br>+549112345678
       </div>
-      <div class="col-6">
+      <div class="col-xs-12 col-md-6 justify-content-center">
         <h4>REDES</h4>
         <a href="http://instagram.com/paprika" class="btn--instagram"><i class="fa-brands fa-instagram"></i></a>
         <a href="http://facebook.com/paprika" class="btn--facebook"><i class="fa-brands fa-facebook"></i></a>
@@ -192,5 +169,6 @@
     crossorigin="anonymous"></script>
 </body>
 <!--FIN BODY-->
+<script src="../js/javascript.js"></script>
 
 </html>
